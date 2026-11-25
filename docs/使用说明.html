@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>ecommerce-detail-designer · 使用说明</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 01 封面 -->
+<section class="page cover">
+  <div class="brand">
+    <img class="mark" src="assets/yunque-mark.png" alt="云雀">
+    <img class="wordmark" src="assets/lark-wordmark-light.svg" alt="CloudLark">
+  </div>
+  <div class="kicker">DETAIL DESIGNER / LARK EDITION</div>
+  <h1>让详情页<br><span>自己会说话</span></h1>
+  <p class="lead">给一张产品图，产出九屏叙事：每屏一句文案、一段可出图的提示词、一套不重样的版式。不编价格，不编销量，参数缺了就写「见包装」。</p>
+  <div class="steps">
+    <div class="step"><span class="n">01</span><b>产品分析</b></div>
+    <div class="step"><span class="n">02</span><b>屏次规划</b></div>
+    <div class="step"><span class="n">03</span><b>逐屏文案</b></div>
+    <div class="step"><span class="n">04</span><b>出图与迭代</b></div>
+  </div>
+  <div class="footerline">技能说明书 · 站长自制<span>lark123.com · 2026.11.25</span></div>
+</section>
+
+<!-- 02 先看结论 -->
+<section class="page">
+  <div class="sec"><span class="num">00</span><h2>先看结论</h2></div>
+  <blockquote class="bigquote">详情页不是把卖点堆上去，而是决定用户看到第几屏时愿意相信你。这个技能把这个决定固化成九屏流程。</blockquote>
+
+  <div class="two">
+    <div class="card">
+      <div class="sub">它会自动完成</div>
+      <ul>
+        <li>产品四维分析：卖点、特征、场景、痛点</li>
+        <li>按叙事顺序挑 8 屏以上，版式不重复</li>
+        <li>每屏给文案、提示词、版式与运镜</li>
+        <li>改一屏只重出一屏，不推翻全套</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="sub">最终交付</div>
+      <p class="mono">9 屏方案（Markdown）+ 每屏提示词</p>
+      <p class="small">宿主有图像工具时可直接出图；没有就交付方案。</p>
+    </div>
+  </div>
+
+  <table class="table">
+    <thead><tr><th>它的底线</th><th>怎么执行</th></tr></thead>
+    <tbody>
+      <tr><td>不编造价格、销量、认证</td><td>用户没给就不写</td></tr>
+      <tr><td>参数缺了就写「见包装」</td><td>参数屏不用假数字填</td></tr>
+      <tr><td>产品外观不能变样</td><td>每屏提示词都以 [img0] 锚定</td></tr>
+    </tbody>
+  </table>
+
+  <div class="status">
+    <div><strong>8 / 8</strong><span>规则校验通过</span></div>
+    <div><strong>9</strong><span>示例屏数</span></div>
+    <div><strong>0</strong><span>代码依赖</span></div>
+  </div>
+
+  <div class="pagefooter"><span>ecommerce-detail-designer · 使用说明</span><span class="brandfoot"><img src="assets/yunque-mark.png" alt=""><span class="url">lark123.com</span></span><span>02 / 08</span></div>
+</section>
+
+<!-- 03 屏次结构 -->
+<section class="page">
+  <div class="sec"><span class="num">01</span><h2>九屏叙事</h2></div>
+  <p class="body">它不会给你九张同款图。每屏换版式、换运镜：居中英雄、左右分栏、Bento 网格、微距破框、四宫格，交替出现。</p>
+  <figure class="figure">
+    <img src="../screenshots/01-flow.png" alt="九屏结构">
+    <figcaption>示例方案的结构：钩子 → 痛点 → 卖点 → 原料 → 微距 → 口感 → 场景 → 参数 → 收尾。</figcaption>
+  </figure>
+  <div class="note">屏数可以多可以少，<strong>但不能少于 8 屏</strong>：少于这个数，用户对产品和卖家的信任攒不够。</div>
+  <div class="pagefooter"><span>ecommerce-detail-designer · 使用说明</span><span class="brandfoot"><img src="assets/yunque-mark.png" alt=""><span class="url">lark123.com</span></span><span>03 / 08</span></div>
+</section>
+
+<!-- 04 安装 -->
+<section class="page">
+  <div class="sec"><span class="num">02</span><h2>安装：两步</h2></div>
+  <p class="body">纯提示词技能，<b>没有任何代码依赖</b>。把整个文件夹放进技能目录就行。</p>
+
+  <div class="steps">
+    <div class="step-row"><span class="n">1</span><div><b>放目录</b>
+      <div class="code">&lt;技能目录&gt;\ecommerce-detail-designer\</div>
+      <p class="small">豆包是 .user_skills，其它智能体换成各自的 skills 目录。</p>
+    </div></div>
+    <div class="step-row"><span class="n">2</span><div><b>确认出图能力</b>
+      <p class="small">要真正出图，宿主需要有图像编辑工具（豆包是 <span class="mono">image_edit</span>）。没有的话，技能只交付 Markdown 方案。</p>
+    </div></div>
+  </div>
+
+  <p class="sub" style="margin-top:6mm">怎么触发</p>
+  <div class="code">「做一套锅巴的详情页」
+「这个产品帮我出 9 屏详情」
+「改第 3 屏，背景太暗」</div>
+
+  <div class="note">第一次最好给一张产品图：产品图是唯一的外观锚点，后续每屏都会以它为参考。</div>
+  <div class="pagefooter"><span>ecommerce-detail-designer · 使用说明</span><span class="brandfoot"><img src="assets/yunque-mark.png" alt=""><span class="url">lark123.com</span></span><span>04 / 08</span></div>
+</section>
+
+<!-- 05 一屏长什么样 -->
+<section class="page">
+  <div class="sec"><span class="num">03</span><h2>一屏长什么样</h2></div>
+  <p class="body">以示例方案的第 1 屏为例，每次交付都包含这四块：</p>
+
+  <p class="sub">版式</p>
+  <div class="code">居中英雄构图，产品占画面 55%</div>
+
+  <p class="sub">文案（画面上的字）</p>
+  <div class="code">“一掰就脆的米香”</div>
+
+  <p class="sub">画面提示词</p>
+  <div class="code">以[img0]中的产品为主体，严格保留其米黄色不规则薄片、焦褐边缘与厚薄特征。竖版电商详情页首屏，居中英雄构图，产品斜叠成小塔，底部散落碎渣。背景为深褐色旧木桌面，虚化到只留纹理。光从左上方斜切，暖侧逆光，焦边透亮。画面上方一行书法感大字“一掰就脆的米香”，下方一行小字“大锅现炕 只放米和油”。整体暖金与棕褐调。</div>
+
+  <p class="sub">风格</p>
+  <div class="code">乡土怀旧，暖金棕褐</div>
+
+  <div class="note">提示词里不写比例、像素、模型名；比例统一在调用时给（9:16，约 1440×2560）。</div>
+  <div class="pagefooter"><span>ecommerce-detail-designer · 使用说明</span><span class="brandfoot"><img src="assets/yunque-mark.png" alt=""><span class="url">lark123.com</span></span><span>05 / 08</span></div>
+</section>
+
+<!-- 06 规则校验 -->
+<section class="page">
+  <div class="sec"><span class="num">04</span><h2>八条硬规则</h2></div>
+  <figure class="figure">
+    <img src="../screenshots/02-checks.png" alt="八条硬规则校验">
+    <figcaption>示例方案跑完校验：8 / 8 通过。这些规则可被脚本检查，不靠自觉。</figcaption>
+  </figure>
+  <p class="body" style="margin-top:6mm">随包提供 <span class="mono">tools/validate-sample.mjs</span>（需 Node 18+），可以对任何一份产出的方案跑一遍：</p>
+  <div class="code">node tools/validate-sample.mjs 示例-锅巴详情页方案.md</div>
+  <div class="pagefooter"><span>ecommerce-detail-designer · 使用说明</span><span class="brandfoot"><img src="assets/yunque-mark.png" alt=""><span class="url">lark123.com</span></span><span>06 / 08</span></div>
+</section>
+
+<!-- 07 能解决什么 -->
+<section class="page">
+  <div class="sec"><span class="num">05</span><h2>能解决什么问题</h2></div>
+  <p class="body">小卖家没有设计团队，详情页要么套模板、要么求人做。这个技能把「讲哪几屏、每屏说什么」变成可复用流程，并且卡住编造数据这条线。</p>
+
+  <div class="pipeline">
+    <div>产品图</div><div>四维分析</div><div>屏次规划</div><div>逐屏文案</div><div>出图 / 迭代</div>
+  </div>
+
+  <div class="two">
+    <div class="card good"><div class="sub">适合</div>
+      <ul>
+        <li>食品、日用、服饰、3C 的新品详情页</li>
+        <li>详情页改版，想换叙事顺序</li>
+        <li>给外包设计师的 brief</li>
+        <li>把卖点翻译成可出图的画面</li>
+      </ul>
+    </div>
+    <div class="card no"><div class="sub">不适合</div>
+      <ul>
+        <li>只精修一张主图</li>
+        <li>需要真实拍摄素材</li>
+        <li>需要价格促销物料（不编价格）</li>
+        <li>没有产品图、没有品类信息</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="pagefooter"><span>ecommerce-detail-designer · 使用说明</span><span class="brandfoot"><img src="assets/yunque-mark.png" alt=""><span class="url">lark123.com</span></span><span>07 / 08</span></div>
+</section>
+
+<!-- 08 迁移与排错 -->
+<section class="page">
+  <div class="sec"><span class="num">06</span><h2>迁移到别的智能体</h2></div>
+  <table class="table">
+    <thead><tr><th>目标</th><th>要改什么</th><th>难度</th></tr></thead>
+    <tbody>
+      <tr><td>Claude Code / Codex / Cursor</td><td>放进对应 skills 目录即可</td><td>低</td></tr>
+      <tr><td>自研 Agent</td><td>把 SKILL.md 作为系统提示词载入</td><td>低</td></tr>
+      <tr><td>Dify / Coze</td><td>作为提示词模板导入，换成平台图像能力</td><td>中</td></tr>
+    </tbody>
+  </table>
+  <div class="note">唯一要替换的是出图工具：把说明书里的 <span class="mono">image_edit</span> 换成目标平台的图像生成或编辑接口。</div>
+
+  <div class="sec" style="margin-top:8mm"><span class="num">07</span><h2>常见问题</h2></div>
+  <div class="issue"><b>它没出图，只给了文字？</b><p>宿主没有图像工具，或你没说「直接出图」。方案本身就是默认交付物。</p></div>
+  <div class="issue"><b>产品不像了？</b><p>出图阶段必须把你的产品图作为 [img0]，换图后所有屏重出。</p></div>
+  <div class="issue"><b>文案太挤？</b><p>让它每屏只留 1 主标 + 1 副标，删掉支撑小字。</p></div>
+
+  <div class="status">
+    <div><strong>v1.0.0</strong><span>打包版本</span></div>
+    <div><strong>2026.11.25</strong><span>发布时间</span></div>
+    <div><strong>自制</strong><span>版权与出处</span></div>
+  </div>
+  <div class="pagefooter"><span>ecommerce-detail-designer · 使用说明</span><span class="brandfoot"><img src="assets/yunque-mark.png" alt=""><span class="url">lark123.com</span></span><span>08 / 08</span></div>
+</section>
+
+</body>
+</html>
