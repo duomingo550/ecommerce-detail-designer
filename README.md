@@ -1,0 +1,1 @@
+# ecommerce-detail-designer
